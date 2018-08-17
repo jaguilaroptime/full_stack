@@ -1,9 +1,16 @@
-# Reto Educacion Incluyente
-# Proyecto Desarrollo de una aplicación para fomentar las practicar estudiantiles en la localtidad de chapinero
-# Integrantes:
+## Reto Educacion Incluyente
 
- ## Jeenson Aguilar Correa
- ## Juan Pablo Sainea
- ## Andrea Jimenez
-#Nombre del Grupo : Educando
+### Objetivo
+
+Desarrollar una aplicación para fomentar impulsar las practicas estudiantiles en la localidad de chapinero
+
+### Integrantes
+
+- Jeenson Aguilar Correa
+- Juan Pablo Sainea
+- Andrea Jimenez
+
+### Nombre grupo
+
+Educando
 
