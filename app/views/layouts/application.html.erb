@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pagina</title>
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Proyecto</a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <%= link_to("Tareas", tareas_path, class: "nav-link") %>
+        </li>
+        <li class="nav-item">
+          <%= link_to("Nueva Tarea", new_tarea_path, class: "nav-link") %>
+        </li>
+        <% if usuario_signed_in? %>
+          <li class="nav-item">
+            <%= link_to("Logout", destroy_usuario_session_path, method: :delete, class: "nav-link") %>
+          </li>
+        <% else %>
+          <li class="nav-item">
+            <%= link_to("Iniciar", new_usuario_session_path, class: "nav-link") %>
+          </li>
+          <li class="nav-item">
+            <%= link_to("Registrarse", new_usuario_registration_path, class: "nav-link") %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </nav>
+
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
+  <%= yield %>
+
+  <footer class="fixed-bottom text-center">Jeenson Aguilar Correa</footer>
+</div>
+</body>
+</html>
