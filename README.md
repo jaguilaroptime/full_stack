@@ -24,3 +24,4 @@ rails generate model ...
 
 ##Scaffold
 rails generate scaffold Comentario tarea:references usuario:references contenido:text
+Conectar con postgres y heroku

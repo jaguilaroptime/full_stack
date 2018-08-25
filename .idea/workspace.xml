@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a418d256-26c9-4cf0-b7f2-95d5a95b772b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/tareas_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/tareas_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/tarea.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/tarea.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/usuario.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/usuario.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/tareas/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tareas/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/tareas/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tareas/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -95,13 +88,13 @@
         <counts>
           <entry key="erb" value="487" />
           <entry key="gitignore" value="1" />
-          <entry key="md" value="219" />
+          <entry key="md" value="256" />
           <entry key="rb" value="316" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="219" />
+          <entry key="Markdown" value="256" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="RHTML" value="487" />
           <entry key="Ruby" value="316" />
@@ -111,13 +104,13 @@
         <counts>
           <entry key="erb" value="5" />
           <entry key="gitignore" value="1" />
-          <entry key="md" value="1" />
+          <entry key="md" value="2" />
           <entry key="rb" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Markdown" value="1" />
+          <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="RHTML" value="5" />
           <entry key="Ruby" value="7" />
@@ -129,15 +122,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/tareas/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/comentarios_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -177,13 +161,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/tareas/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+            <state relative-caret-position="238">
+              <caret line="14" column="52" lean-forward="true" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="442">
+                <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/comentarios/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
@@ -237,7 +233,6 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/views/tareas/index.html.erb" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/controllers/tareas_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/comentarios/_form.html.erb" />
@@ -247,6 +242,7 @@
         <option value="$PROJECT_DIR$/app/models/comentario.rb" />
         <option value="$PROJECT_DIR$/app/controllers/comentarios_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/comentarios/index.html.erb" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -456,12 +452,12 @@
       <option name="presentableId" value="Default" />
       <updated>1534605414288</updated>
       <workItem from="1534605421304" duration="17479000" />
-      <workItem from="1535206829940" duration="6228000" />
+      <workItem from="1535206829940" duration="6914000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23707000" />
+    <option name="totallyTimeSpent" value="24393000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
@@ -574,16 +570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="442">
-            <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -664,17 +650,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tareas/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/comentarios/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="42" lean-forward="true" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tareas/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="52" lean-forward="true" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="442">
+            <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
