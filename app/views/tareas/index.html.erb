@@ -3,14 +3,19 @@
 <% end %>
 <h1>Lista de Tareas</h1>
 
-<ul>
+<table class="table table-hover">
+  <thead class="thead-dark">
+    <th>Titulo</th>
+    <th>Descripcion</th>
+    <th colspan="3">Acciones</th>
+  </thead>
   <% @tareas.each do |tarea| %>
-    <li>
-      <%= tarea.titulo + " " + tarea.description %> -
-      <%= link_to "Editar", edit_tarea_path(tarea) %> -
-      <%= link_to "Ver", tarea_path(tarea) %> -
-      <%= link_to "Eliminar", tarea, method: :delete, data: {confirm: "Estas seguro?"} %>
-
-    </li>
+    <tr>
+      <td><%= tarea.titulo %></td>
+      <td><%= tarea.description %></td>
+      <td><%= link_to "Ver", tarea_path(tarea) %></td>
+      <td><%= link_to "Editar", edit_tarea_path(tarea) %></td>
+      <td><%= link_to "Eliminar", tarea, method: :delete, data: {confirm: "Estas seguro?"} %></td>
+    </tr>
   <% end -%>
-</ul>
+</table>

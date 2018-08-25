@@ -1,8 +1,27 @@
-<h1>view task</h1>
+<div class="card">
+  <div class="card-header">
+    <h1>Ver Tarea</h1>
+  </div>
+  <div class="card-body">
+    <p>Name : <%= @tarea.titulo %>
+      Description : <%= @tarea.description %></p>
+    <% unless @tarea.usuario.nil? %>
+      <small>Escrito Por: <%= @tarea.usuario.email %></small><br>
+    <% end %>
 
-<h2>Name : <%= @tarea.titulo %></h2>
-<h3>Description : <%= @tarea.description %></h3>
-<% unless @tarea.usuario.nil? %>
-<small>Escrito Por: <%= @tarea.usuario.email %></small><br>
-<% end %>
-<%= link_to("Lista", tareas_path, class: "btn btn-primary") %>
+    <%= render "comentarios/form" %>
+    <h2>Lista de Comentarios</h2>
+    <ul>
+      <% @tarea.comentarios.each  do |comentario| %>
+        <li><%=comentario.contenido %></li>
+      <% end %>
+    </ul>
+  </div>
+
+  <div class="card-footer">
+    <%= link_to("Lista de Tareas", tareas_path, class: "btn btn-primary") %>
+  </div>
+</div>
+
+
+

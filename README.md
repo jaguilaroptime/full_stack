@@ -21,3 +21,6 @@ rails generate migration AddUsuarioRefToTareas usuario:references
 rake db:migrate
 
 rails generate model ...
+
+##Scaffold
+rails generate scaffold Comentario tarea:references usuario:references contenido:text

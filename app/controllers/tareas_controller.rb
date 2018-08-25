@@ -8,6 +8,7 @@ class TareasController < ApplicationController
   end
 
   def show
+    @comentario = Comentario.new
   end
 
   def new
