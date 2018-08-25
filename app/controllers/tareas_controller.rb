@@ -18,6 +18,9 @@ class TareasController < ApplicationController
     @tarea = Tarea.new(
         tarea_params
         )
+    #@tarea = current_usuario.tareas.new(tarea_params)
+    @tarea.usuario_id = current_usuario.id
+
     if @tarea.save
       redirect_to @tarea
     else

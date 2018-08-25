@@ -14,3 +14,10 @@ Desarrollar una aplicación para fomentar impulsar las practicas estudiantiles e
 
 Educando
 
+
+#Comandos Importantes
+rails generate migration AddUsuarioRefToTareas usuario:references
+
+rake db:migrate
+
+rails generate model ...
