@@ -12,9 +12,12 @@
 
 ActiveRecord::Schema.define(version: 20180825153953) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "comentarios", force: :cascade do |t|
-    t.integer "tarea_id"
-    t.integer "usuario_id"
+    t.bigint "tarea_id"
+    t.bigint "usuario_id"
     t.text "contenido"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -22,12 +25,19 @@ ActiveRecord::Schema.define(version: 20180825153953) do
     t.index ["usuario_id"], name: "index_comentarios_on_usuario_id"
   end
 
+  create_table "posts", force: :cascade do |t|
+    t.string "title"
+    t.text "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "tareas", force: :cascade do |t|
     t.string "titulo"
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "usuario_id"
+    t.bigint "usuario_id"
     t.index ["usuario_id"], name: "index_tareas_on_usuario_id"
   end
 
@@ -43,4 +53,7 @@ ActiveRecord::Schema.define(version: 20180825153953) do
     t.index ["reset_password_token"], name: "index_usuarios_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "comentarios", "tareas"
+  add_foreign_key "comentarios", "usuarios"
+  add_foreign_key "tareas", "usuarios"
 end
