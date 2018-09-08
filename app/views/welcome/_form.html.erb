@@ -1,0 +1,20 @@
+<% @contacto.errors.full_messages.each do |error| %>
+  <div class="alert alert-danger" role="alert">
+    <ul>
+      <li><%= error %></li>
+    </ul>
+  </div>
+<% end %>
+
+
+<%= form_for @contacto do |t| %>
+  <label for="">Nombre: </label>
+  <div class="form-group">
+    <%= t.text_field :titulo, class: "form-control" %>
+  </div>
+  <label for="">Descripcion : </label>
+  <div class="form-group">
+    <%= t.text_area :description, class: "form-control" %><br/>
+  </div>
+  <%= t.submit "Crear", class: "btn btn-success" %>
+<% end %>

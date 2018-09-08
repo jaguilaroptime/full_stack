@@ -11,10 +11,22 @@
 <body>
 <div class="container">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Proyecto</a>
+    <a class="navbar-brand" href="#">Curso Full Stack</a>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <%= link_to("Inicio", {controller: "welcome"}, class: "nav-link") %>
+        </li>
+        <li class="nav-item active">
+          <%= link_to("Equipo", {controller: "welcome", action: "equipo"}, class: "nav-link") %>
+        </li>
+        <li class="nav-item active">
+          <%= link_to("Descripción del Proyecto", {controller: "welcome", action: "proyecto"}, class: "nav-link") %>
+        </li>
+        <li class="nav-item active">
+          <%= link_to("Contacto", {controller: "welcome", action: "contacto"}, class: "nav-link") %>
+        </li>
         <li class="nav-item active">
           <%= link_to("Tareas", tareas_path, class: "nav-link") %>
         </li>
